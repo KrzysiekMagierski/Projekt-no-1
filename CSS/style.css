@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -9,8 +9,8 @@ body {
   padding: 0;
   line-height: 1.2;
   display: block;
-  width: 100vw;
-  height: 100vh;
+  /*width: 100vw;*/
+  min-height: 100vh;
 }
 
 .container {
@@ -22,12 +22,20 @@ body {
   background-size: auto, auto, cover;
 }
 
+div.leftColumn {
+  width: 40%;
+  display: inline-block;
+}
+div.rightColumn {
+  width: 40%;
+  display: inline-block;
+}
 
 .headline {
-  width: 30%;
+  width: 100%;
   text-align: center;
-  margin-bottom: 10px;
-  padding-top: 140px;
+  margin-bottom: 20px;
+  /*padding-top: 140px;*/
 }
 
 h2 {
@@ -38,8 +46,8 @@ h2 {
 }
 
 .register {
-  width: 30%;
-  background-color: rgb(117,29,38,0.1);
+  width: 100%;
+  background-color: rgba(117,29,38,0.1);
   padding: 20px;
   border-radius: 5px;
 }
@@ -57,10 +65,48 @@ input {
   border: 1px solid rgb(198,198,198);
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 40px;
   border-radius: 4px;
 }
+
+input.username {
+  background-image: url('../IMG/user-icon.png');
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+}
+input.password {
+  background-image: url('../IMG/lock-icon.png');
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+}
+input.email {
+  background-image: url('../IMG/mail-icon.png');
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+}
+
+input.location {
+  background-image: url('../IMG/map-icon.png');
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+}
+
+textarea {
+  width: auto;
+  resize: none;
+  display: block;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid rgb(198,198,198);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 4px;
+}
+
 .checkbox {
   float: left;
+  display: inline-block;
   border: 1px solid rgb(198,198,198);
   width: 25px;
   height: 25px;
@@ -69,6 +115,7 @@ input {
 }
 label {
   float: left;
+  display: inline-block;
   color: rgb(175,175,175);
   font-size: 16px;
   font-weight: 300;
@@ -81,7 +128,7 @@ label {
     font-weight: 300;
     opacity: 1; /* Firefox */
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: rgb(175,175,175);
   font-size: 16px;
   font-weight: 300;
@@ -92,7 +139,7 @@ label {
   font-weight: 300;
 }
 
-.greenButton {
+input.greenButton {
   font-size: 24px;
   font-weight: normal;
   color: white;
@@ -101,4 +148,9 @@ label {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 4px;
+}
+
+#inlineButton {
+  display: inline;
+  width: 40%;
 }
