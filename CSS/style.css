@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
   line-height: 1.2;
@@ -90,6 +90,12 @@ input.location {
   background-repeat: no-repeat;
   background-position: left 10px center;
 }
+input.tel {
+  background-image: url('../IMG/mobile-icon.png');
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+
+}
 
 textarea {
   width: auto;
@@ -106,7 +112,7 @@ textarea {
 
 .checkbox {
   float: left;
-  display: inline-block;
+  /*display: inline-block;*/
   border: 1px solid rgb(198,198,198);
   width: 25px;
   height: 25px;
@@ -115,7 +121,7 @@ textarea {
 }
 label {
   float: left;
-  display: inline-block;
+  /*display: inline-block;*/
   color: rgb(175,175,175);
   font-size: 16px;
   font-weight: 300;
@@ -147,10 +153,52 @@ input.greenButton {
   border: 1px solid rgb(59,154,0);
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+}
+input.lightGreenButton {
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  background-color: rgb(159,223,161);
+  border: 1px solid rgb(144,202,109);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+}
+input.redButton {
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  background-color: rgb(245,83,101);
+  border: 1px solid rgb(162,32,42);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   border-radius: 4px;
 }
 
-#inlineButton {
-  display: inline;
-  width: 40%;
+
+#inlineButtonLeft {
+  display: inline-block;
+  width: 45%;
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+#inlineButtonRight {
+  display: inline-block;
+  width: 45%;
+  margin-right: auto;
+  margin-left: 5%;
+}
+#signInButton {
+  display: inline-block;
+  width: 45%;
+  margin-right: auto;
+  margin-left: 30%;
 }
