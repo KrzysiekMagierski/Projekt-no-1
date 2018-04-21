@@ -37,8 +37,10 @@ body {
 div.leftColumn {
   width: 45%;
   float:left;
+
 }
 div.rightColumn {
+
   width: 45%;
   float: right;
 }
